@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;300;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;500;600;700;800;900&family=Slabo+27px&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+main{
+    margin-left: 7vh;
+    margin-right: 7vh;
+}

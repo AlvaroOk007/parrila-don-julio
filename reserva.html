@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa</title>
+    <link rel="stylesheet" href="styles.css"><!--Estilos de la página y sus elementos-->
+    <link rel="stylesheet" href="normalize.css"><!--Estilos para resetear los margenes, padding, entre otros...-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><!--Importo Íconos de Google-->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h2>DON JULIO</h2>
+                <p>Parrilla</p>
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">
+                    <span class="material-symbols-outlined menu-icon">
+                        home
+                    </span>
+                    INICIO
+                </a></li>
+                <li>
+                    <span class="material-symbols-outlined menu-icon">
+                        note_alt
+                    </span>
+                    RESERVA ONLINE
+                </li>
+                <li><a href="index.html#contactos">
+                    <span class="material-symbols-outlined menu-icon">
+                        co_present
+                    </span>
+                    CONTACTO
+                </a></li>
+                <li><a href="index.html#horarios">
+                    <span class="material-symbols-outlined menu-icon">
+                        schedule
+                    </span>
+                    HORARIOS
+                </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="asistencia">
+        <a href="asistencia.html" target="_blank">    
+            <span class="material-symbols-outlined asistente-icon">
+                support_agent
+            </span>
+            <p>Asistente Virtual</p>
+        </a>
+    </div>
+    <main class="main_reservar">
+        <div class="reservar-title">
+            <h2>RESERVAR ONLINE</h2>
+            <div class="separator"></div>
+            <p>Complete con sus datos para completar la reserva.</p>
+        </div>
+        <form action=" "> 
+            <div class="nombres general">
+                <label for="name">Ingrese Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <div class="fecha_hora ">
+                <div class="conteiner_fecha general">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+                </div>
+                <div class="conteiner_hora general">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora">
+                </div>
+            </div>
+            <div class="conteiner_completo">
+                <div class="cantidad_personas general">
+                    <label for="cant_personas ">Cantidad de personas</label>
+                    <select name="cantidad personas" id="cant_personas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                
+                <div class="conteiner_email general">
+                    <label for="mail">Ingrese un Mail</label>
+                    <input type="email" name="email" id="mail">
+                </div>
+            </div>
+            <input type="submit" class = "btn"value="Reservar" onclick="myFunction()">
+        </form>
+    </main>
+    <footer>
+        <p>© 2023 PARRILLA DON JULIO, BUENOS AIRES, ARGENTINA.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
